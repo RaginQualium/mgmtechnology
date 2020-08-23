@@ -14,7 +14,7 @@
 			});
 
 			var defaults = {
-				duration : 400,
+				duration : 300,
 				easing : 'easeOutCirc'
 			}
 
