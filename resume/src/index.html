@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Istanbul - Personal Portfolio</title>
+    <title>Marc G&uuml;nter M&uuml;ller - Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Template Google Fonts -->
@@ -13,16 +13,18 @@
     <!-- Template CSS Files -->
     <link type="text/css" media="all" href="css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" media="all" href="css/jquery.animatedheadline.css" rel="stylesheet">
-    <link type="text/css" media="all" href="css/font-awesome.min.css" rel="stylesheet">
+    <!--
+    <link type="text/css" media="all" href="css/font-awesome.min.css" rel="stylesheet"> 
+    -->
     <link type="text/css" media="all" href="css/style.css" rel="stylesheet">
-    <link type="text/css" media="all" href="css/skins/yellow.css" rel="stylesheet">
-
+    <link type="text/css" media="all" href="css/skins/red.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <!-- Template JS Files -->
     <script src="js/modernizr.js"></script>
 
 </head>
 
-<body class="dark fullscreendark">
+<body class="light dark-header bgvideo">
     <div class="page">
         <!-- Header Starts -->
     <header id="header">
@@ -46,8 +48,8 @@
 					</li>
 					<li>
 						<div>
-							<a id="link-work" href="#work">
-								<i class="fa fa-briefcase"></i><span>my Portfolio</span>
+							<a id="link-work" href="#experience">
+								<i class="fa fa-briefcase"></i><span>Experience</span>
 							</a>
 						</div>
 					</li>
@@ -60,8 +62,8 @@
 					</li>
 					<li>
 						<div>
-							<a id="link-blog" href="#blog">
-								<i class="fa fa-comments"></i><span>my Blog</span>
+							<a id="link-blog" href="#skills">
+								<i class="fa fa-comments"></i><span>my skills</span>
 							</a>
 						</div>
 					</li>
@@ -70,16 +72,16 @@
 			</div>
 		</div>
 		<!-- Stretchy Navigation Starts -->
-		<div class="cd-stretchy-nav">
+		<div class="cd-stretchy-nav lighter">
 			<a class="cd-nav-trigger" href="#0">
 				<span aria-hidden="true"></span>
 			</a>
 			<ul class="stretchy-nav">
-				<li class="active"><a href="#home"><span>Home</span></a></li>
+				<li class="active"><a class="home" href="#home"><span>Home</span></a></li>
 				<li><a href="#about"><span>About</span></a></li>
-				<li><a href="#works"><span>Portfolio</span></a></li>
+				<li><a href="#experience"><span>Experience</span></a></li>
 				<li><a href="#contact"><span>Contact</span></a></li>
-				<li><a href="#blog"><span>Blog</span></a></li>
+				<li><a href="#blog"><span>Skills</span></a></li>
 			</ul>
 			<span aria-hidden="true" class="stretchy-nav-bg"></span>
 		</div>
@@ -93,29 +95,36 @@
             <!-- Back To Home Ends [ONLY MOBILE] -->
             <!-- Home Section Starts -->
             <section id="home" class="active">
+				
                 <!-- Text Rotator Starts -->
                 <div class="main-text-container">
+					<img class="leftimagepicture" src="img/portrait_500.jpg" alt="Marc Günter Müller" />
                     <div class="main-text" id="selector">
                         <h3>Hi there !</h3>
                         <h1 class="ah-headline">
 					I'm
 						<span class="ah-words-wrapper">
-							<b class="is-visible">marc günter müller</b>
-							<b>a web designer</b>
-							<b>a blogger</b>
-							<b>a freelancer</b>
+							<b class="is-visible">marc müller</b>
+							<b>a senior developer</b>
+							<b>frontend developer</b>
+							<b>backend developer</b>
+							<b>fullstack developer</b>
 						</span>
 					</h1>
-                        <p>I'm a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
+                        <p>I'm a senior fullstack software developer based in Witten, NRW. 
+                            I strives to build useful and beautiful web applications through carefully crafted code and user-centric design.</p>
                         <div class="call-to-actions-home">
                             <div class="text-left">
                                 <a href="#about" class="btn link-portfolio-one"><span><i class="fa fa-user"></i>more about me</span></a>
-                                <a href="#work" class="btn btn-secondary link-portfolio-two"><span><i class="fa fa-suitcase"></i>portfolio</span></a>
+                                <a href="#experience" class="btn btn-secondary link-portfolio-two"><span><i class="fa fa-suitcase"></i>experience</span></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Text Rotator Ends -->
+				<video class="bg-video" poster="http://via.placeholder.com/1920x1080" autoplay="" loop="" muted="">
+					<source src="path_to_your_video" type="video/mp4">
+				</video>
             </section>
             <!-- Home Section Ends -->
             <!-- About Section Starts -->
@@ -131,9 +140,10 @@
                         <!-- Personal Infos Starts -->
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
 							<div class="image-container">
-								<img class="img-fluid d-block" src="http://via.placeholder.com/500x500.jpg"  alt="" />
+								<img class="img-fluid d-block" src="img/portrait_500.jpg"  alt="Portrait" />
 							</div>
-							<p  class="d-block d-md-none">I'm a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
+							<p  class="d-block d-md-none">I'm a senior fullstack software developer based in Witten, NRW. 
+                                I strives to build useful and beautiful web applications through carefully crafted code and user-centric design.</p>
 						</div>
 						<div class="row col-xl-6 col-lg-6 col-md-12">
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
@@ -142,7 +152,7 @@
 										<h6><span class="font-weight-600">First Name</span>Marc</h6>
 									</li>
 									<li>
-										<h6><span class="font-weight-600">Last Name</span>M&uuml;ller</h6>
+										<h6><span class="font-weight-600">Last Name</span>Müller</h6>
 									</li>
 									<li>
 										<h6><span class="font-weight-600">Birthdate</span>21 september 1966</h6>
@@ -151,10 +161,10 @@
 										<h6><span class="font-weight-600">Nationality</span>German</h6>
 									</li>
 									<li>
-										<h6><span class="font-weight-600">Experience</span>7 years</h6>
+										<h6><span class="font-weight-600">Experience</span>22 years</h6>
 									</li>
 									<li>
-										<h6><span class="font-weight-600">Address</span>Istanbul</h6>
+										<h6><span class="font-weight-600">Address</span>Witten, NRW</h6>
 									</li>
 								</ul>
 							</div>
@@ -169,19 +179,19 @@
 									<li>
 										<h6><span class="font-weight-600">Phone</span>+49 1 573 573 0880</h6>
 									</li>
-									<li>
+									<li> 
 										<h6><span class="font-weight-600">Email</span>marc@mgm.technology</h6>
-									</li>
-									<li>
-										<h6><span class="font-weight-600">Telegram</span>mgm_technology</h6>
 									</li>
 									<li>
 										<h6><span class="font-weight-600">Discord</span>mgm.technology</h6>
 									</li>
+									<li>
+										<h6><span class="font-weight-600">Telegram</span>mgm.technology</h6>
+									</li>
 								</ul>
 							</div>
 							<div class="col-12 resume-btn-container">
-								<a href="#" class="btn btn-resume"><span><i class="fa fa-download"></i>download my cv</span></a>
+								<a href="https://drive.google.com/file/d/1y5WcSfRGxEMnICbbfUD8d-A7Lpf6MLIA/view?usp=sharing" target="_blank" class="btn btn-resume"><span><i class="fa fa-download"></i>download my cv</span></a>
 							</div>
 						</div>
                         <!-- Personal Infos Ends -->
@@ -193,8 +203,20 @@
                 </div>
                 <!-- Download CV Ends -->
                 <!-- Resume Starts -->
-                <div class="resume-container">
-                    <div class="container">
+               
+            </section>
+            <!-- About Section Ends -->
+            <!-- Experience Section Starts -->
+            <section id="experience">
+                <div class="portfolio-container">
+                    <!-- Main Heading Starts -->
+                    <div class="container page-title text-center">
+                        <h2 class="text-center">my <span>experience </span></h2>
+						<span class="title-head-subtitle">a few recent design and coding projects. Want to see more? Email me.</span>
+                    </div>
+                    <!-- Main Heading Ends -->
+                    <div class="container page-title text-center">
+
                         <div class="row">
                             <!-- Experience Starts -->
                             <div class="col-xl-6 col-lg-6 col-md-6">
@@ -205,15 +227,18 @@
                                         <span class="bullet"></span>
                                         <div class="card">
                                             <div class="card-header">
-                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2017 - 2019</span>
+                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2019 - 2020</span>
                                                 <span class="d-block font-weight-400 uppercase">
-												web designer 
+												senior software developer
 												<span class="separator"></span>
-                                                <span class="font-weight-700">Envato</span>
+                                                <span class="font-weight-700">Concepts System GmbH</span>
                                                 </span>
                                             </div>
                                             <div class="card-body">
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
+                                                <ul>
+                                                    <li>Fullstack software development based on springboot, kotlin, javascript and pug</li>
+                                                    <li>Plugin development for tacton's configuration management tcsite, implemented with java and jquery</li>
+                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -223,37 +248,169 @@
                                         <span class="bullet"></span>
                                         <div class="card">
                                             <div class="card-header">
-                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2014 - 2017</span>
+                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2016 - 2019</span>
                                                 <span class="d-block font-weight-400 uppercase">
-												web developer 
+												software developer 
 												<span class="separator"></span>
-                                                <span class="font-weight-700">Twitter</span>
+                                                <span class="font-weight-700">Tacton Systems GmbH</span>
                                                 </span>
                                             </div>
                                             <div class="card-body">
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
-                                            </div>
+                                                <ul>
+                                                    <li>Fullstack developers for Tacton Professional Services in multinational development teams (java, javascript, react)</li>
+                                                    <li>Tacton Technical Experts: 3rd level support for Tacton products (java, javascript)</li>
+                                                 </ul> </div>
                                         </div>
                                     </div>
                                     <!-- Item Ends -->
+                                    
                                     <!-- Item Starts -->
                                     <div class="item">
                                         <span class="bullet"></span>
                                         <div class="card">
                                             <div class="card-header">
-                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2010 - 2014</span>
+                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2014 - 2015</span>
                                                 <span class="d-block font-weight-400 uppercase">
-												Consultant
+                                                    System architect and software developer
 												<span class="separator"></span>
-                                                <span class="font-weight-700">Google</span>
+                                                <span class="font-weight-700">Mobiloclean Handelsgruppe GmbH</span>
                                                 </span>
                                             </div>
                                             <div class="card-body">
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
+                                                <ul>
+                                                    <li>Planning and migration of the internal company information management systemlanning and migration of the internal company information management system</li>
+                                                    <li>System integration for the Production Data Information system (PHP)</li>
+                                                </ul>             
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Item Ends -->
+                                    <!-- Item Ends -->                                    
+                                    <!-- Item Starts -->
+                                    <div class="item">
+                                        <span class="bullet"></span>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2012 - 2013</span>
+                                                <span class="d-block font-weight-400 uppercase">
+                                                    software developer
+												<span class="separator"></span>
+                                                <span class="font-weight-700">Image Information Systems Ltd.</span>
+                                                </span>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>Architecture and implementation of the radiology information system iQ-RIS (UML, PHP, Zend Framework)</li>
+                                                 </ul>             
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Ends -->  
+                                    <!-- Item Starts -->
+                                    <div class="item">
+                                        <span class="bullet"></span>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2010 - 2012</span>
+                                                <span class="d-block font-weight-400 uppercase">
+                                                    web developer
+												<span class="separator"></span>
+                                                <span class="font-weight-700">freelancer</span>
+                                                </span>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>implementing software solutions based on wordpress and joomla</li>
+                                                 </ul>             
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Ends -->     
+                                                                     
+                                   <!-- Item Starts -->
+                                    <div class="item">
+                                        <span class="bullet"></span>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2007 - 2009</span>
+                                                <span class="d-block font-weight-400 uppercase">
+                                                    senior consultant outputmanagement
+												<span class="separator"></span>
+                                                <span class="font-weight-700">Rasterpunkt GmbH</span>
+                                                </span>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>providing of software trainings</li>
+                                                    <li>developing PrintNet software applications in a multinational team</li>
+                                                 </ul>             
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Ends -->        
+                                    <!-- Item Starts -->
+                                    <div class="item">
+                                        <span class="bullet"></span>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>1999 - 2007</span>
+                                                <span class="d-block font-weight-400 uppercase">
+                                                    senior systems engineer
+												<span class="separator"></span>
+                                                <span class="font-weight-700">Danet Internet Solutions GmbH (Devoteam)</span>
+                                                </span>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>implementing java identity management platform</li>
+                                                    <li>Project management used vehicle trade at Daimler-Chrysler </li>
+                                                    <li>sofware development for used vehicle trade at Daimler-Chrysler (PHP) </li>
+                                                 </ul>             
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Ends -->     
+                                    <!-- Item Starts -->
+                                    <div class="item">
+                                        <span class="bullet"></span>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>1999 - 2007</span>
+                                                <span class="d-block font-weight-400 uppercase">
+                                                    consultant for java and object oriented programming
+												<span class="separator"></span>
+                                                <span class="font-weight-700">Sercon - IBM Global Services</span>
+                                                </span>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>qualtity management at IBM laboratory</li>
+                                                    <li>sofware development for stock market simulation application(java) </li>
+                                                 </ul>             
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Ends -->      
+                                    <!-- Item Starts -->
+                                    <div class="item">
+                                        <span class="bullet"></span>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>1986 - 1989</span>
+                                                <span class="d-block font-weight-400 uppercase">
+                                                    banker
+												<span class="separator"></span>
+                                                <span class="font-weight-700">Stadtsparkasse Wuppertal</span>
+                                                </span>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>Dispatcher private current accounts</li>
+                                                    <li>Cashier </li>
+                                                 </ul>             
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Ends -->                     
                                 </div>
 
                             </div>
@@ -267,15 +424,15 @@
                                         <span class="bullet"></span>
                                         <div class="card">
                                             <div class="card-header">
-                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2007 - 2010</span>
+                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>1993 - 1997</span>
                                                 <span class="d-block font-weight-400 uppercase">
-												Engineering Degree 
+												Diplominformatiker 
 												<span class="separator"></span>
-                                                <span class="font-weight-700">Istanbul University</span>
+                                                <span class="font-weight-700">Fachhochschule W&uuml;rzburg-Schweinfurt-Aschaffenburg</span>
                                                 </span>
                                             </div>
                                             <div class="card-body">
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
+                                                <p>Degree course in business informatics, completed with grade 1.7</p>
                                             </div>
                                         </div>
                                     </div>
@@ -285,15 +442,15 @@
                                         <span class="bullet"></span>
                                         <div class="card">
                                             <div class="card-header">
-                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2005 - 2007</span>
+                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>1989 - 1991</span>
                                                 <span class="d-block font-weight-400 uppercase">
-												Masters Degree 
+                                                    Abitur
 												<span class="separator"></span>
-                                                <span class="font-weight-700">Paris University</span>
+                                                <span class="font-weight-700">Bergisches Kolleg Wuppertal </span>
                                                 </span>
                                             </div>
                                             <div class="card-body">
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
+                                                <p>Major subjects Mathematics and Latin, final grade 1.1</p>
                                             </div>
                                         </div>
                                     </div>
@@ -303,15 +460,33 @@
                                         <span class="bullet"></span>
                                         <div class="card">
                                             <div class="card-header">
-                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2001 - 2005</span>
+                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>1983 - 1986</span>
                                                 <span class="d-block font-weight-400 uppercase">
-												Bachelor Degree
+                                                    Apprenticeship as a bank clerk
 												<span class="separator"></span>
-                                                <span class="font-weight-700">Moscow High School</span>
+                                                <span class="font-weight-700">Stadtsparkasse Wuppertal</span>
                                                 </span>
                                             </div>
                                             <div class="card-body">
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
+                                                <p>final grade 'good'</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Ends -->
+                                     <!-- Item Starts -->
+                                     <div class="item">
+                                        <span class="bullet"></span>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>1983 - 1986</span>
+                                                <span class="d-block font-weight-400 uppercase">
+                                                    Fachoberschulreife
+												<span class="separator"></span>
+                                                <span class="font-weight-700">Gymnasium</span>
+                                                </span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>Gymnasium Sedanstrasse, Wuppertal and Gymnasium Scheidtstrasse, Wuppertal</p>
                                             </div>
                                         </div>
                                     </div>
@@ -320,201 +495,9 @@
                             </div>
                             <!-- Education Ends -->
                         </div>
-                        <!-- Skills Starts -->
-                        <div class="row">
-                            <!-- Skill Bar Starts -->
-                            <div class="col-12">
-                                <h2 class="font-weight-600 uppercase title-section skills-title">skills</h2>
-                            </div>
-							<!-- Skill Bar Starts -->
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <span class="skill-text">html</span>
-                                <div class="chart-bar">
-                                    <span class="item-progress" data-percent="80" style="width: 80%;"></span>
-                                    <span class="percent" style="right: calc(20% - 21px);">80%<div class="arrow"></div></span>
-                                </div>
-                            </div>
-                            <!-- Skill Bar Ends -->
-                            <!-- Skill Bar Starts -->
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <span class="skill-text">javascript</span>
-                                <div class="chart-bar">
-                                    <span class="item-progress" data-percent="60" style="width: 60%;"></span>
-                                    <span class="percent" style="right: calc(40% - 21px);">60%<div class="arrow"></div></span>
-                                </div>
-                            </div>
-                            <!-- Skill Bar Ends -->
-                            <!-- Skill Bar Starts -->
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <span class="skill-text">css</span>
-                                <div class="chart-bar">
-                                    <span class="item-progress" data-percent="75" style="width: 75%;"></span>
-                                    <span class="percent" style="right: calc(25% - 21px);">75%<div class="arrow"></div></span>
-                                </div>
-                            </div>
-                            <!-- Skill Bar Ends -->
-                            <!-- Skill Bar Starts -->
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <span class="skill-text">jquery</span>
-                                <div class="chart-bar">
-                                    <span class="item-progress" data-percent="65" style="width: 65%;"></span>
-                                    <span class="percent" style="right: calc(35% - 21px);">65%<div class="arrow"></div></span>
-                                </div>
-                            </div>
-                            <!-- Skill Bar Ends -->
-                            <!-- Skill Bar Starts -->
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <span class="skill-text">wordpress</span>
-                                <div class="chart-bar">
-                                    <span class="item-progress" data-percent="90" style="width: 90%;"></span>
-                                    <span class="percent" style="right: calc(10% - 21px);">90%<div class="arrow"></div></span>
-                                </div>
-                            </div>
-                            <!-- Skill Bar Ends -->
-                            <!-- Skill Bar Starts -->
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <span class="skill-text">angular js</span>
-                                <div class="chart-bar">
-                                    <span class="item-progress" data-percent="85" style="width: 85%;"></span>
-                                    <span class="percent" style="right: calc(15% - 21px);">85%<div class="arrow"></div></span>
-                                </div>
-                            </div>
-                            <!-- Skill Bar Ends -->
-							<!-- Skill Bar Starts -->
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <span class="skill-text">illustrator</span>
-                                <div class="chart-bar">
-                                    <span class="item-progress" data-percent="60" style="width: 60%;"></span>
-                                    <span class="percent" style="right: calc(40% - 21px);">60%<div class="arrow"></div></span>
-                                </div>
-                            </div>
-                            <!-- Skill Bar Ends -->
-							<!-- Skill Bar Starts -->
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <span class="skill-text">after effects</span>
-                                <div class="chart-bar">
-                                    <span class="item-progress" data-percent="75" style="width: 75%;"></span>
-                                    <span class="percent" style="right: calc(25% - 21px);">75%<div class="arrow"></div></span>
-                                </div>
-                            </div>
-                            <!-- Skill Bar Ends -->
-                            
-							<!-- Skill Bar Starts -->
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <span class="skill-text">photoshop</span>
-                                <div class="chart-bar">
-                                    <span class="item-progress" data-percent="80" style="width: 80%;"></span>
-                                    <span class="percent" style="right: calc(20% - 21px);">80%<div class="arrow"></div></span>
-                                </div>
-                            </div>
-                            <!-- Skill Bar Ends -->
-                        </div>
-                        <!-- Skills Starts -->
-                    </div>
-
-                    <!-- Resume Ends -->
-                </div>
-            </section>
-            <!-- About Section Ends -->
-            <!-- Portfolio Section Starts -->
-            <section id="work">
-                <div class="portfolio-container">
-                    <!-- Main Heading Starts -->
-                    <div class="container page-title text-center">
-                        <h2 class="text-center">my <span>portfolio</span></h2>
-						<span class="title-head-subtitle">a few recent design and coding projects. Want to see more? Email me.</span>
-                    </div>
-                    <!-- Main Heading Ends -->
-                    <div class="portfolio-section">
-                        <div class="container cd-container">
-                            <div>
-                                <!-- Portfolio Items Starts -->
-                                <ul class="row" id="portfolio-items">
-                                    <!-- Portfolio Item Starts -->
-                                    <li class="col-12 col-md-6 col-lg-4">
-                                        <a href="#0" data-type="project-1">
-                                            <img src="http://via.placeholder.com/854x480" alt="Project" class="img-fluid">
-                                            <div><span>Image Format</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <!-- Portfolio Item Ends -->
-                                    <!-- Portfolio Item Starts -->
-                                    <li class="col-12 col-md-6 col-lg-4">
-                                        <a href="#0" data-type="project-2">
-                                            <img src="http://via.placeholder.com/854x480" alt="Project" class="img-fluid">
-                                            <div><span>Youtube Format</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <!-- Portfolio Item Ends -->
-                                    <!-- Portfolio Item Starts -->
-                                    <li class="col-12 col-md-6 col-lg-4">
-                                        <a href="#0" data-type="project-3">
-                                            <img src="http://via.placeholder.com/854x480" alt="Project" class="img-fluid">
-                                            <div><span>Slider Format</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <!-- Portfolio Item Ends -->
-                                    <!-- Portfolio Item Starts -->
-                                    <li class="col-12 col-md-6 col-lg-4">
-                                        <a href="#0" data-type="project-4">
-                                            <img src="http://via.placeholder.com/854x480" alt="Project" class="img-fluid">
-                                            <div><span>Video Format</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <!-- Portfolio Item Ends -->
-                                    <!-- Portfolio Item Starts -->
-                                    <li class="col-12 col-md-6 col-lg-4">
-                                        <a href="#0" data-type="project-5">
-                                            <img src="http://via.placeholder.com/854x480" alt="Project" class="img-fluid">
-                                            <div><span>Image Format</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <!-- Portfolio Item Ends -->
-                                    <!-- Portfolio Item Starts -->
-                                    <li class="col-12 col-md-6 col-lg-4">
-                                        <a href="#0" data-type="project-6">
-                                            <img src="http://via.placeholder.com/854x480" alt="Project" class="img-fluid">
-                                            <div><span>Image Format</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <!-- Portfolio Item Ends -->
-                                    <!-- Portfolio Item Starts -->
-                                    <li class="col-12 col-md-6 col-lg-4">
-                                        <a href="#0" data-type="project-7">
-                                            <img src="http://via.placeholder.com/854x480" alt="Project" class="img-fluid">
-                                            <div><span>Image Format</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <!-- Portfolio Item Ends -->
-                                    <!-- Portfolio Item Starts -->
-                                    <li class="col-12 col-md-6 col-lg-4">
-                                        <a href="#0" data-type="project-8">
-                                            <img src="http://via.placeholder.com/854x480" alt="Project" class="img-fluid">
-                                            <div><span>Image Format</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <!-- Portfolio Item Ends -->
-									<!-- Portfolio Item Starts -->
-                                    <li class="col-12 col-md-6 col-lg-4">
-                                        <a href="#0" data-type="project-9">
-                                            <img src="http://via.placeholder.com/854x480" alt="Project" class="img-fluid">
-                                            <div><span>Image Format</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <!-- Portfolio Item Ends -->
-                                </ul>
-                                <!-- Portfolio Items Ends -->
-                            </div>
-                        </div>
+                        
+                        
+                        
                     </div>
 					<!-- PORTFOLIO OVERLAY STARTS -->
 					<div class="portfolio-overlay"></div>
@@ -849,23 +832,15 @@
                             <div class="col-12 col-md-4 col-xl-4 leftside">
                                 <ul class="custom-list">
                                     <li>
-                                        <h6 class="font-weight-600"> <span class="contact-title">Phone</span><i class="fa fa-whatsapp"></i><span class="contact-content">+216 21 184 010</span></h6>
+                                        <h6 class="font-weight-600"> <span class="contact-title">Phone</span><i class="fa fa-phone"></i><span class="contact-content">+49 1 573 573 0880</span></h6>
                                     </li>
                                     <li>
-                                        <h6 class="font-weight-600"> <span class="contact-title">email</span><i class="fa fa-envelope-o fs-14"></i><span class="contact-content">info@daria.ua</span></h6>
-
-                                    </li>
-                                    <li>
-                                        <h6 class="font-weight-600"><span class="contact-title">instagram</span><i class="fa fa-instagram"></i><span class="contact-content">daria.198</span></h6>
-
-                                    </li>
-                                    <li>
-                                        <h6 class="font-weight-600"><span class="contact-title">Dribbble </span><i class="fa fa-dribbble"></i><span class="contact-content">daria.dribble</span></h6>
-                                    </li>
+                                        <h6 class="font-weight-600"> <span class="contact-title">email</span><i class="fa fa-envelope fs-14"></i><span class="contact-content">marc@mgm.technology</span></h6>
+                                    </li> 
                                 </ul>
 
                                 <!-- Social Media Profiles Starts -->
-
+                                <!--
                                 <div class="social">
                                     <h6 class="font-weight-600 uppercase">Social Profiles</h6>
                                     <ul class="list-inline social social-intro text-center p-none">
@@ -879,6 +854,7 @@
                                         </li>
                                     </ul>
                                 </div>
+                                -->
                                 <!-- Social Media Profiles Ends -->
                             </div>
                             <!-- Contact Infos Ends -->
@@ -896,7 +872,7 @@
                                         <!-- Name Field Ends -->
                                         <!-- Email Field Starts -->
                                         <div class="form-group col-xl-6"> <i class="fa fa-envelope prefix"></i>
-                                            <input id="email" type="email" name="email" class="form-control" placeholder="YOUR EMAIL" required>
+                                            <input id="email" type="email" name="email" class="form-control" placeholder="YOUR EMAIL ADDRESS" required>
                                         </div>
                                         <!-- Email Field Ends -->
                                         <!-- Comment Textarea Starts -->
@@ -922,117 +898,145 @@
             </section>
             <!-- Contact Section Ends -->
             <!-- Blog Section Starts -->
-            <section id="blog">
+            <section id="skills">
                 <div class="container page-title text-center">
-                    <h2 class="text-center">latest <span>posts</span></h2>
-					<span class="title-head-subtitle">tips, insights, and best practices about web design and developpment</span>
+                    <h2 class="text-center"> <span>skills</span></h2>
+					<span class="title-head-subtitle">overview on most important skills</span>
                 </div>
                 <div class="container">
+                    <!-- Skills Starts -->
                     <div class="row">
-                        <!-- Article Starts -->
-                        <div class="col-12 col-sm-6">
-                            <article>
-                                <!-- Figure Starts -->
-                                <figure class="blog-figure">
-                                    <a href="blog-post.html">
-                                        <img class="img-fluid" src="http://via.placeholder.com/748x364" alt="">
-                                    </a>
-                                    <div class="post-date"> <span>23</span>
-                                        <span>JUN</span>
-                                    </div>
-                                </figure>
-                                <!-- Figure Ends -->
-                                <a href="blog-post.html">
-                                    <h4>create a wordpress theme from scratch</h4>
-                                </a>
-                                <!-- Excerpt Starts -->
-                                <div class="blog-excerpt">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris Lorem ...</p>
-                                    <a href="blog-post.html" class="btn readmore"><span>Read more</span></a>
-                                </div>
-                                <!-- Excerpt Ends -->
-                            </article>
+                        <!-- Skill Bar Starts -->
+                        <div class="col-12">
+                            <h2 class="font-weight-600 uppercase title-section skills-title">skills</h2>
                         </div>
-                        <!-- Article Ends -->
-                        <!-- Article Starts -->
-                        <div class="col-12 col-sm-6">
-                            <article>
-                                <!-- Figure Starts -->
-                                <figure class="blog-figure">
-                                    <a href="blog-post.html">
-                                        <img class="img-fluid" src="http://via.placeholder.com/748x364" alt="">
-                                    </a>
-                                    <div class="post-date"> <span>18</span>
-                                        <span>aug</span>
-                                    </div>
-                                </figure>
-                                <!-- Figure Ends -->
-                                <a href="blog-post.html">
-                                    <h4>Effective Marketing Strategy tips</h4>
-                                </a>
-                                <!-- Excerpt Starts -->
-                                <div class="blog-excerpt">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris Lorem ...</p>
-                                    <a href="blog-post.html" class="btn readmore"><span>Read more</span></a>
-                                </div>
-                                <!-- Excerpt Ends -->
-                            </article>
+                        <!-- Skill Bar Starts -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <span class="skill-text">java</span>
+                            <div class="chart-bar">
+                                <span class="item-progress" data-percent="95" style="width: 95%;"></span>
+                                <span class="percent" style="right: calc(5% - 21px);">95%<div class="arrow"></div></span>
+                            </div>
                         </div>
-                        <!-- Article Ends -->
-                        <!-- Article Starts -->
-                        <div class="col-12 col-sm-6">
-                            <article>
-                                <!-- Figure Starts -->
-                                <figure class="blog-figure">
-                                    <a href="blog-post.html">
-                                        <img class="img-fluid" src="http://via.placeholder.com/748x364" alt="">
-                                    </a>
-                                    <div class="post-date"> <span>01</span>
-                                        <span>mar</span>
-                                    </div>
-                                </figure>
-                                <!-- Figure Ends -->
-                                <a href="blog-post.html">
-                                    <h4>free psd and sketch ressouces</h4>
-                                </a>
-                                <!-- Excerpt Starts -->
-                                <div class="blog-excerpt">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris Lorem ...</p>
-                                    <a href="blog-post.html" class="btn readmore"><span>Read more</span></a>
-                                </div>
-                                <!-- Excerpt Ends -->
-                            </article>
+                        <!-- Skill Bar Ends -->
+                        <!-- Skill Bar Starts -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <span class="skill-text">javascript</span>
+                            <div class="chart-bar">
+                                <span class="item-progress" data-percent="80" style="width: 80%;"></span>
+                                <span class="percent" style="right: calc(20% - 21px);">80%<div class="arrow"></div></span>
+                            </div>
                         </div>
-                        <!-- Article Ends -->
-                        <!-- Article Starts -->
-                        <div class="col-12 col-sm-6">
-                            <article>
-                                <!-- Figure Starts -->
-                                <figure class="blog-figure">
-                                    <a href="blog-post.html">
-                                        <img class="img-fluid" src="http://via.placeholder.com/748x364" alt="">
-                                    </a>
-                                    <div class="post-date"> <span>01</span>
-                                        <span>mar</span>
-                                    </div>
-                                </figure>
-                                <!-- Figure Ends -->
-                                <a href="blog-post.html">
-                                    <h4>How to become a successful freelancer</h4>
-                                </a>
-                                <!-- Excerpt Starts -->
-                                <div class="blog-excerpt">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris Lorem ...</p>
-                                    <a href="blog-post.html" class="btn readmore"><span>Read more</span></a>
-                                </div>
-                                <!-- Excerpt Ends -->
-                            </article>
+                        <!-- Skill Bar Ends -->
+                        <!-- Skill Bar Starts -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <span class="skill-text">jquery</span>
+                            <div class="chart-bar">
+                                <span class="item-progress" data-percent="65" style="width: 65%;"></span>
+                                <span class="percent" style="right: calc(35% - 21px);">65%<div class="arrow"></div></span>
+                            </div>
                         </div>
-                        <!-- Article Ends -->
-                        <!-- Link To Blog Starts -->
-                        <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 allposts"> <a href="blog.html" class="btn btn-secondary"><span><i class="fa fa-comments"></i>All posts</span></a>
+                        <!-- Skill Bar Ends -->
+
+
+
+                        <!-- Skill Bar Starts -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <span class="skill-text">react</span>
+                            <div class="chart-bar">
+                                <span class="item-progress" data-percent="50" style="width: 50%;"></span>
+                                <span class="percent" style="right: calc(50% - 21px);">50%<div class="arrow"></div></span>
+                            </div>
                         </div>
-                        <!-- Link To Blog Ends -->
+                        <!-- Skill Bar Ends -->
+                        <!-- Skill Bar Starts -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <span class="skill-text">DevOps</span>
+                            <div class="chart-bar">
+                                <span class="item-progress" data-percent="60" style="width: 60%;"></span>
+                                <span class="percent" style="right: calc(40% - 21px);">60%<div class="arrow"></div></span>
+                            </div>
+                        </div>
+                        <!-- Skill Bar Starts -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <span class="skill-text">web testing</span>
+                            <div class="chart-bar">
+                                <span class="item-progress" data-percent="70" style="width: 70%;"></span>
+                                <span class="percent" style="right: calc(30% - 21px);">70%<div class="arrow"></div></span>
+                            </div>
+                        </div>
+                        <!-- Skill Bar Ends -->
+
+
+
+                        <!-- Skill Bar Starts -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <span class="skill-text">html</span>
+                            <div class="chart-bar">
+                                <span class="item-progress" data-percent="95" style="width: 95%;"></span>
+                                <!-- first percentage in calc function must be 100 - data-percent-->
+                                <span class="percent" style="right: calc(5% - 21px);">95%<div class="arrow"></div></span>
+                            </div>
+                        </div>
+                        <!-- Skill Bar Ends -->
+                        <!-- Skill Bar Starts -->
+                        
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <span class="skill-text">css</span>
+                            <div class="chart-bar">
+                                <span class="item-progress" data-percent="75" style="width: 75%;"></span>
+                                <span class="percent" style="right: calc(25% - 21px);">75%<div class="arrow"></div></span>
+                            </div>
+                        </div>
+
+
+                        <!-- Skill Bar Ends -->
+                        <!-- Skill Bar Starts -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <span class="skill-text">kotlin</span>
+                            <div class="chart-bar">
+                                <span class="item-progress" data-percent="60" style="width: 60%;"></span>
+                                <span class="percent" style="right: calc(40% - 21px);">60%<div class="arrow"></div></span>
+                            </div>
+                        </div>
+                        <!-- Skill Bar Ends -->
+
+                        
+                    </div>
+
+                    <div class="row cert-info">
+                        <!-- Certification Infos Starts -->
+                        <div class="col-12">
+                            <h2 class="font-weight-600 uppercase title-section skills-title">certification</h2>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="container page-title text-center">
+                                <span class="title-head-subtitle">Oracle Certified Professional Java Programmer</span>
+                            </div>
+                            <div class="image-container">
+                                <img class="img-fluid d-block" src="img/cert_ocpjp_w_854.png"  alt="Oracle Certified Professional Java Programmer" />
+                            </div>
+                            <p  class="d-block d-md-none">Oracle Certified Professional Java Programmer</p>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="container page-title text-center">
+                                <span class="title-head-subtitle">Oracle Certified Expert - Web Component Developer</span>
+                            </div>
+                            <div class="image-container">
+                                <img class="img-fluid d-block" src="img/cert_ocewcd_w_854.png"  alt="Oracle Certified Expert - Web Component Developer" />
+                            </div>
+                            <p  class="d-block d-md-none">Oracle Certified Expert - Web Component Developer</p>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="container page-title text-center">
+                                <span class="title-head-subtitle">Certified IT-Security Manager</span>
+                            </div>
+                            <div class="image-container">
+                                <img class="img-fluid d-block" src="img/cert_itsec_854.png"  alt="Certified IT Security Manager" />
+                            </div>
+                            <p  class="d-block d-md-none">Oracle Certified Expert - Web Component Developer</p>
+                        </div>
+                        <!-- Personal Infos Ends -->
                     </div>
                 </div>
             </section>
@@ -1043,11 +1047,11 @@
     <!-- Preloader Starts -->
     <div class="preloader">
         <div class="preloader-container">
-            <h1>daria</h1>
+            <h1>marc g&uuml;nter m&uuml;ller</h1>
             <div id="progress-line-container">
                 <div class="progress-line"></div>
             </div>
-            <h1>taylor</h1>
+            <h1>mgm.technology</h1>
         </div>
     </div>
     <!-- Preloader Ends -->
