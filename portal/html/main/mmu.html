@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../images/favicon.ico">
+
+    <title>Power BI Admin - Dashboard</title>
+    
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="css/vendors_css.css">
+	  
+	<!-- Style-->  
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/skin_color.css">
+     
+  </head>
+
+<body class="hold-transition light-skin sidebar-mini theme-primary">
+	
+<div class="wrapper">
+
+  <header class="main-header">
+	<div class="d-flex align-items-center logo-box justify-content-between">
+		<a href="#" class="waves-effect waves-light nav-link rounded d-none d-md-inline-block mx-10 push-btn" data-toggle="push-menu" role="button">
+			<span class="icon-Align-left"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+		</a>	
+		<!-- Logo -->
+		<a href="index.html" class="logo">
+		  <!-- logo-->
+		  <div class="logo-lg">
+			  <span class="light-logo"><img src="../images/logo-light-text.png" alt="logo"></span>
+			  <span class="dark-logo"><img src="../images/logo-light-text.png" alt="logo"></span>
+		  </div>
+		</a>	
+	</div>  
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top pl-10">
+		<div class="container">
+		  <!-- Sidebar toggle button-->
+		  <div class="app-menu">
+			<ul class="header-megamenu nav">
+				<li class="btn-group nav-item d-md-none">
+					<a href="#" class="waves-effect waves-light nav-link rounded push-btn" data-toggle="push-menu" role="button">
+						<span class="icon-Align-left"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+					</a>
+				</li>
+				<li class="btn-group nav-item d-none d-xl-inline-block">
+					<a href="#" data-provide="fullscreen" class="waves-effect waves-light nav-link rounded full-screen" title="Full Screen">
+						<i class="icon-Expand-arrows"><span class="path1"></span><span class="path2"></span></i>
+					</a>
+				</li>
+			</ul> 
+		  </div>
+
+		  <div class="navbar-custom-menu r-side">
+			<ul class="nav navbar-nav">		  
+
+			  <!-- Control Sidebar Toggle Button -->
+			  <li>
+				  <a href="#" data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light">
+					<i class="icon-Settings"><span class="path1"></span><span class="path2"></span></i>
+				  </a>
+			  </li>
+
+			</ul>
+		  </div>
+		</div>
+    </nav>
+  </header>
+  
+  <aside class="main-sidebar">
+    <!-- sidebar-->
+    <section class="sidebar">
+		<div class="user-profile px-20 py-15">
+			<div class="d-flex align-items-center">			
+				<div class="image">
+				  <img src="../images/avatar/avatar-13.png" class="avatar avatar-lg bg-primary-light" alt="User Image">
+				</div>
+				<div class="info">
+					<a class="dropdown-toggle px-20" data-toggle="dropdown" href="#">Johen Doe</a>
+					<div class="dropdown-menu">
+					  <a class="dropdown-item" href="#"><i class="ti-user"></i> Profile</a>
+					  <a class="dropdown-item" href="#"><i class="ti-email"></i> Inbox</a>
+					  <a class="dropdown-item" href="#"><i class="ti-link"></i> Connections</a>
+					  <div class="dropdown-divider"></div>
+					  <a class="dropdown-item" href="#"><i class="ti-settings"></i> Settings</a>
+					</div>
+				</div>
+			</div>
+			<ul class="list-inline profile-setting mt-30 mb-20 d-flex justify-content-between">
+				<li><a href="#" data-toggle="tooltip" data-placement="top" title="Search"><i data-feather="search"></i></a></li>
+				<li><a href="#" data-toggle="tooltip" data-placement="top" title="Notification"><i data-feather="bell"></i></a></li>
+				<li><a href="#" data-toggle="tooltip" data-placement="top" title="Chat"><i data-feather="message-square"></i></a></li>
+				<li><a href="#" data-toggle="tooltip" data-placement="top" title="Logout"><i data-feather="log-out"></i></a></li>
+			</ul>
+        </div>
+		
+      <!-- sidebar menu-->
+      <ul class="sidebar-menu" data-widget="tree">		
+		<li class="treeview">
+          <a href="#">
+           <i class="icon-Layout-4-blocks"><span class="path1"></span><span class="path2"></span></i>
+			<span>Dashboard</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="index.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dashboard 1</a></li>
+            <li><a href="index2.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dashboard 2</a></li>
+            <li><a href="index3.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dashboard 3</a></li>
+            <li><a href="index4.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dashboard 4</a></li>
+          </ul>
+        </li>	
+		<li>
+          <a href="mailbox.html">
+            <i class="icon-Incoming-mail"><span class="path1"></span><span class="path2"></span></i>
+			<span>Mailbox</span>
+          </a>
+        </li>
+		<li class="treeview">
+          <a href="#">
+            <i span class="icon-Layout-grid"><span class="path1"></span><span class="path2"></span></i>
+			<span>Apps</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="extra_calendar.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Calendar</a></li>
+            <li><a href="contact_app.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Contact List</a></li>
+            <li><a href="contact_app_chat.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Chat</a></li>
+            <li><a href="extra_taskboard.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Todo</a></li>
+          </ul>
+        </li>
+		<li class="header">Collections </li>
+		<li class="treeview">
+          <a href="#">
+            <i class="icon-Library"><span class="path1"></span><span class="path2"></span></i>
+            <span>Widgets</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="widgets_blog.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Blog</a></li>
+            <li><a href="widgets_chart.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Chart</a></li>
+            <li><a href="widgets_list.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>List</a></li>
+            <li><a href="widgets_social.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Social</a></li>
+            <li><a href="widgets_statistic.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Statistic</a></li>
+            <li><a href="widgets_weather.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Weather</a></li>
+            <li><a href="widgets.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Widgets</a></li>
+          </ul>
+        </li> 
+		<li class="treeview">
+          <a href="#">
+            <i  class="icon-Book-open"><span class="path1"></span><span class="path2"></span></i>
+            <span>Modals</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+			<li><a href="component_modals.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Modals</a></li>
+            <li><a href="component_sweatalert.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Sweet Alert</a></li>
+            <li><a href="component_notification.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Toastr</a></li>
+          </ul>
+        </li>
+		<li>
+          <a href="email_index.html">
+            <i class="icon-Mail-notification"><span class="path1"></span><span class="path2"></span></i>
+			<span>Emails</span>
+          </a>
+        </li>  
+		<li class="header">User Pages</li>		
+		<li class="treeview">
+          <a href="#">
+            <i class="icon-User"><span class="path1"></span><span class="path2"></span></i>
+			<span>Usefull Page</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+			<li><a href="invoice.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Invoice</a></li>
+			<li><a href="invoicelist.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Invoice List</a></li>	
+			<li><a href="extra_app_ticket.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Support Ticket</a></li>
+			<li><a href="extra_profile.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>User Profile</a></li>
+            <li><a href="contact_userlist_grid.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Userlist Grid</a></li>
+			<li><a href="contact_userlist.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Userlist</a></li>	
+			<li><a href="sample_faq.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>FAQs</a></li>
+          </ul>
+        </li>		  
+		<li class="treeview">
+          <a href="#">
+            <i class="icon-Clipboard"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+			<span>Extra Pages</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="sample_blank.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Blank</a></li>
+            <li><a href="sample_coming_soon.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Coming Soon</a></li>
+            <li><a href="sample_custom_scroll.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Custom Scrolls</a></li>
+			<li><a href="sample_gallery.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Gallery</a></li>
+			<li><a href="sample_lightbox.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Lightbox Popup</a></li>
+			<li><a href="sample_pricing.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Pricing</a></li>
+          </ul>
+        </li>   	     
+      </ul>
+    </section>
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	  <div class="container">
+		<!-- Main content -->
+		<section class="content">
+			<div class="row">
+				<div class="col-xxl-8 col-12">
+					<div class="box">
+						<div class="box-header">
+							<h4 class="box-title">Profit
+							</h4>
+						</div>
+						<div class="box-body">
+							<div id="charts_widget_2_chart"></div>
+							<div class="bg-primary p-30 rounded mt-30">
+								<div class="d-lg-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<div class="mr-15 bg-white h-40 w-40 l-h-50 rounded text-center">
+											  <span class="icon-Library font-size-18 text-success"><span class="path1"></span><span class="path2"></span></span>
+										</div>
+										<div class="d-flex flex-column font-weight-500">
+											<a href="#" class="text-white hover-success font-size-16">$800</a>
+											<span class="text-white-50">Duis faucibus</span>
+										</div>
+									</div>
+									<div class="d-flex align-items-center">
+										<div class="mr-15 bg-white h-40 w-40 l-h-50 rounded text-center">
+											<span class="icon-Write font-size-18 text-warning"><span class="path1"></span><span class="path2"></span></span>
+										</div>
+										<div class="d-flex flex-column font-weight-500">
+											<a href="#" class="text-white hover-danger font-size-16">$400</a>
+											<span class="text-white-50">Sed quis</span>
+										</div>
+									</div>
+									<div class="d-flex align-items-center">
+										<div class="mr-15 bg-white h-40 w-40 l-h-50 rounded text-center">
+											<span class="icon-Group-chat font-size-18 text-primary"><span class="path1"></span><span class="path2"></span></span>
+										</div>
+										<div class="d-flex flex-column font-weight-500">
+											<a href="#" class="text-white hover-success font-size-16">$900</a>
+											<span class="text-white-50">Phasellus</span>
+										</div>
+									</div>
+									<div class="d-flex align-items-center">
+										<div class="mr-15 bg-white h-40 w-40 l-h-50 rounded text-center">
+											<span class="icon-Attachment1 font-size-18 text-info"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+										</div>
+										<div class="d-flex flex-column font-weight-500">
+											<a href="#" class="text-white hover-info font-size-16">$80</a>
+											<span class="text-white-50">Aliquam In</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				  <div class="col-lg-4 col-12">
+					<div class="box bg-img" style="background-image: url(../images/abstract-3.svg);background-position: right top; background-size: 30% auto;">
+						<div class="box-body">
+							<a href="#" class="box-title font-weight-600 text-muted hover-primary font-size-18">New Release</a>
+							<div class="font-weight-bold text-success mt-20 mb-10">HTML</div>
+							<p class="text-mute font-weight-500 font-size-16">
+								There is no one who loves pain<br> itself, who seeks after...
+							</p>
+						</div>
+					</div>
+				  </div>
+			
+			</div>
+		</section>
+		<!-- /.content -->
+	  </div>
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+	  <div class="container">
+		<div class="pull-right d-none d-sm-inline-block">
+			<ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
+			  <li class="nav-item">
+				<a class="nav-link" href="javascript:void(0)">FAQ</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Purchase Now</a>
+			  </li>
+			</ul>
+		</div>
+		  &copy; 2020 <a href="https://www.multipurposethemes.com/">Multipurpose Themes</a>. All Rights Reserved.
+	  </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar">
+	  
+	<div class="rpanel-title"><span class="pull-right btn btn-circle btn-danger"><i class="ion ion-close text-white" data-toggle="control-sidebar"></i></span> </div>  <!-- Create the tabs -->
+    <ul class="nav nav-tabs control-sidebar-tabs">
+      <li class="nav-item"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="mdi mdi-message-text"></i></a></li>
+      <li class="nav-item"><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="mdi mdi-playlist-check"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane" id="control-sidebar-home-tab">
+          <div class="flexbox">
+			<a href="javascript:void(0)" class="text-grey">
+				<i class="ti-more"></i>
+			</a>	
+			<p>Users</p>
+			<a href="javascript:void(0)" class="text-right text-grey"><i class="ti-plus"></i></a>
+		  </div>
+		  <div class="lookup lookup-sm lookup-right d-none d-lg-block">
+			<input type="text" name="s" placeholder="Search" class="w-p100">
+		  </div>
+          <div class="media-list media-list-hover mt-20">
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-success" href="#">
+				<img src="../images/avatar/1.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Tyler</strong></a>
+				</p>
+				<p>Praesent tristique diam...</p>
+				  <span>Just now</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="../images/avatar/2.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
+				</p>
+				<p>Cras tempor diam ...</p>
+				  <span>33 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-warning" href="#">
+				<img src="../images/avatar/3.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-primary" href="#">
+				<img src="../images/avatar/4.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>			
+			
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-success" href="#">
+				<img src="../images/avatar/1.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Tyler</strong></a>
+				</p>
+				<p>Praesent tristique diam...</p>
+				  <span>Just now</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="../images/avatar/2.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
+				</p>
+				<p>Cras tempor diam ...</p>
+				  <span>33 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-warning" href="#">
+				<img src="../images/avatar/3.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-primary" href="#">
+				<img src="../images/avatar/4.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+			  
+		  </div>
+
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Settings tab content -->
+      
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  
+  <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+  
+</div>
+<!-- ./wrapper -->
+	
+	<!-- Vendor JS -->
+	<script src="js/vendors.min.js"></script>
+    <script src="../assets/icons/feather-icons/feather.min.js"></script>	
+
+	<script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
+	
+	<!-- Power BI Admin App -->
+	<script src="js/template.js"></script>
+	<script src="js/demo.js"></script>
+	<script src="js/pages/dashboard.js"></script>
+	
+</body>
+</html>
